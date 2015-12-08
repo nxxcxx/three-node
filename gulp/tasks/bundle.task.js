@@ -8,9 +8,12 @@ var source = require( 'vinyl-source-stream' );
 var buffer = require( 'vinyl-buffer' );
 
 var customOpts = {
+
 	entries: [ './src/index.js' ],
 	debug: true
+
 };
+
 var opts = assign( {}, watchify.args, customOpts );
 var br = watchify( browserify( opts ) );
 br.transform( babelify );

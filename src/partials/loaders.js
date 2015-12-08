@@ -36,12 +36,15 @@ shaderLoader.loadAll = ( shaderContainer, urlObj ) => {
 
 shaderLoader.loadAll( G.resources.shaders, {
 
-	Avert: './shaders/shaderA.vert',
-	Afrag: './shaders/shaderA.frag'
+	Avert: './resources/shaders/shaderA.vert',
+	Afrag: './resources/shaders/shaderA.frag'
 
 } );
 
 // var textureLoader = new THREE.TextureLoader( loadingManager );
+//
 // textureLoader.load( '', ( tex ) => {
+//
 // 	G.resources.textures.name = tex;
+//
 // } );

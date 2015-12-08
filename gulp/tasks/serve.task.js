@@ -7,10 +7,14 @@ module.exports = function () {
 
 		files: [ './css/*.css' ],
 		injectChanges: true,
+
 		server: {
+
 			baseDir: '.',
 			index: 'index.html'
+
 		},
+
 		port: 3000,
 		ui: false,
 		open: false,
@@ -22,7 +26,7 @@ module.exports = function () {
 
 		'index.html',
 		'./build/*',
-		'./shaders/*'
+		'./resources/**/*'
 
 	], browserSync.reload );
 
